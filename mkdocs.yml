@@ -111,8 +111,14 @@ extra:
 extra_css:
   - stylesheets/extra.css
 
+extra_javascript:
+  - https://unpkg.com/mermaid@11/dist/mermaid.min.js
+
 nav:
   - Home: index.md
+  - Methodology:
+    - methodology/index.md
+    - What is OSINT: methodology/what-is-osint.md
   - OSINT:
     - osint/index.md
     - Search Operators: osint/search-operators.md
