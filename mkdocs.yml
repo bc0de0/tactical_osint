@@ -142,4 +142,5 @@ nav:
     - Infrastructure Analysis: adversarial/infrastructure-analysis.md
   - Tools:
     - tools/index.md
+    - Shodan: tools/shodan.md
   - Tags: tags.md
