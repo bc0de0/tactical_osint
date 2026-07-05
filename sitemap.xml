@@ -2,94 +2,114 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://intel.hexdefender.com/</loc>
-         <lastmod>2026-06-09</lastmod>
+         <lastmod>2026-07-05</lastmod>
     </url>
     <url>
          <loc>https://intel.hexdefender.com/tags/</loc>
-         <lastmod>2026-06-09</lastmod>
+         <lastmod>2026-07-05</lastmod>
     </url>
     <url>
          <loc>https://intel.hexdefender.com/adversarial/</loc>
-         <lastmod>2026-06-09</lastmod>
+         <lastmod>2026-07-05</lastmod>
     </url>
     <url>
          <loc>https://intel.hexdefender.com/adversarial/disinformation/</loc>
-         <lastmod>2026-06-09</lastmod>
+         <lastmod>2026-07-05</lastmod>
     </url>
     <url>
          <loc>https://intel.hexdefender.com/adversarial/infrastructure-analysis/</loc>
-         <lastmod>2026-06-09</lastmod>
+         <lastmod>2026-07-05</lastmod>
     </url>
     <url>
          <loc>https://intel.hexdefender.com/adversarial/threat-actor-profiling/</loc>
-         <lastmod>2026-06-09</lastmod>
+         <lastmod>2026-07-05</lastmod>
     </url>
     <url>
          <loc>https://intel.hexdefender.com/geoint/</loc>
-         <lastmod>2026-06-09</lastmod>
+         <lastmod>2026-07-05</lastmod>
     </url>
     <url>
          <loc>https://intel.hexdefender.com/geoint/geolocation/</loc>
-         <lastmod>2026-06-09</lastmod>
+         <lastmod>2026-07-05</lastmod>
     </url>
     <url>
          <loc>https://intel.hexdefender.com/geoint/imagery-analysis/</loc>
-         <lastmod>2026-06-09</lastmod>
+         <lastmod>2026-07-05</lastmod>
     </url>
     <url>
          <loc>https://intel.hexdefender.com/geoint/satellite-sources/</loc>
-         <lastmod>2026-06-09</lastmod>
+         <lastmod>2026-07-05</lastmod>
     </url>
     <url>
          <loc>https://intel.hexdefender.com/methodology/</loc>
-         <lastmod>2026-06-09</lastmod>
+         <lastmod>2026-07-05</lastmod>
     </url>
     <url>
          <loc>https://intel.hexdefender.com/methodology/what-is-osint/</loc>
-         <lastmod>2026-06-09</lastmod>
+         <lastmod>2026-07-05</lastmod>
     </url>
     <url>
          <loc>https://intel.hexdefender.com/osint/</loc>
-         <lastmod>2026-06-09</lastmod>
+         <lastmod>2026-07-05</lastmod>
     </url>
     <url>
          <loc>https://intel.hexdefender.com/osint/email-recon/</loc>
-         <lastmod>2026-06-09</lastmod>
+         <lastmod>2026-07-05</lastmod>
     </url>
     <url>
          <loc>https://intel.hexdefender.com/osint/search-operators/</loc>
-         <lastmod>2026-06-09</lastmod>
+         <lastmod>2026-07-05</lastmod>
     </url>
     <url>
          <loc>https://intel.hexdefender.com/osint/social-media/</loc>
-         <lastmod>2026-06-09</lastmod>
+         <lastmod>2026-07-05</lastmod>
     </url>
     <url>
          <loc>https://intel.hexdefender.com/osint/username-recon/</loc>
-         <lastmod>2026-06-09</lastmod>
+         <lastmod>2026-07-05</lastmod>
+    </url>
+    <url>
+         <loc>https://intel.hexdefender.com/reports/</loc>
+         <lastmod>2026-07-05</lastmod>
+    </url>
+    <url>
+         <loc>https://intel.hexdefender.com/reports/russia-kyiv-strike-july-2026-assessment/</loc>
+         <lastmod>2026-07-05</lastmod>
     </url>
     <url>
          <loc>https://intel.hexdefender.com/tools/</loc>
-         <lastmod>2026-06-09</lastmod>
+         <lastmod>2026-07-05</lastmod>
     </url>
     <url>
          <loc>https://intel.hexdefender.com/tools/shodan/</loc>
-         <lastmod>2026-06-09</lastmod>
+         <lastmod>2026-07-05</lastmod>
     </url>
     <url>
          <loc>https://intel.hexdefender.com/verification/</loc>
-         <lastmod>2026-06-09</lastmod>
+         <lastmod>2026-07-05</lastmod>
     </url>
     <url>
          <loc>https://intel.hexdefender.com/verification/image-verification/</loc>
-         <lastmod>2026-06-09</lastmod>
+         <lastmod>2026-07-05</lastmod>
     </url>
     <url>
          <loc>https://intel.hexdefender.com/verification/source-credibility/</loc>
-         <lastmod>2026-06-09</lastmod>
+         <lastmod>2026-07-05</lastmod>
     </url>
     <url>
          <loc>https://intel.hexdefender.com/verification/video-verification/</loc>
-         <lastmod>2026-06-09</lastmod>
+         <lastmod>2026-07-05</lastmod>
+    </url>
+    <url>
+         <loc>https://intel.hexdefender.com/reports/archive/2026/</loc>
+         <lastmod>2026-07-05</lastmod>
+    </url>
+    <url>
+         <loc>https://intel.hexdefender.com/reports/category/military/</loc>
+         <lastmod>2026-07-05</lastmod>
+    </url>
+    <url>
+         <loc>https://intel.hexdefender.com/reports/category/political/</loc>
+         <lastmod>2026-07-05</lastmod>
     </url>
 </urlset>
