@@ -8,6 +8,9 @@ edit_uri: edit/main/docs/
 docs_dir: docs
 site_dir: site
 
+hooks:
+  - hooks/report_pdf_export.py
+
 theme:
   name: material
   custom_dir: overrides
@@ -60,8 +63,35 @@ theme:
 plugins:
   - search:
       lang: en
+  - blog:
+      blog_dir: reports
+      post_url_format: "{slug}"
+      post_date_format: long
+      archive: true
+      archive_date_format: yyyy
+      categories: true
+      categories_allowed:
+        - Cyber
+        - Military
+        - Maritime
+        - Airpower
+        - Space
+        - Energy
+        - Logistics
+        - Industrial
+        - Economic
+        - Political
+        - Information Operations
+        - Intelligence
+      pagination: true
+      pagination_per_page: 10
   - tags:
       tags_file: tags.md
+      # NOTE: mkdocs-material >=9.6 deprecates `tags_file` in favor of a
+      # different option name; this repo currently pins >=9.5.0 and the
+      # site already used this key before this change, so it is left
+      # as-is rather than changed as a drive-by fix. Flagged here for
+      # whoever next bumps mkdocs-material materially past 9.5.x.
 
 markdown_extensions:
   - abbr
@@ -116,6 +146,7 @@ extra_javascript:
 
 nav:
   - Home: index.md
+  - Reports: reports/index.md
   - Methodology:
     - methodology/index.md
     - What is OSINT: methodology/what-is-osint.md

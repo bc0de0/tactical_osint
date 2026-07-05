@@ -32,8 +32,26 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-pip-
 
+      - name: Install WeasyPrint native dependencies
+        # mkdocs-with-pdf renders PDFs via WeasyPrint, which needs Pango/
+        # Cairo/GDK-Pixbuf at the OS level -- pip alone cannot provide
+        # these. Without this step, report PDF generation (triggered by
+        # hooks/report_pdf_export.py's on_post_build) fails; the site
+        # build itself is designed to still succeed in that case (see
+        # that hook's docstring), but PDFs would silently never appear.
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y --no-install-recommends \
+            libpango-1.0-0 libpangocairo-1.0-0 libcairo2 \
+            libgdk-pixbuf2.0-0 libffi-dev shared-mime-info
+
       - name: Install dependencies
         run: pip install -r requirements.txt
 
       - name: Deploy to GitHub Pages
+        # No PDF-related env vars are set here on purpose:
+        # hooks/report_pdf_export.py sets IRON_COMPASS_PDF_SUBBUILD=1
+        # itself, only on the per-report sub-process it spawns, so that
+        # with-pdf activates for that sub-build alone and this hook's
+        # own on_post_build can never recurse into itself.
         run: mkdocs gh-deploy --force --clean --verbose

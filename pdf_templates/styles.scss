@@ -1,0 +1,52 @@
+// Custom print styles for mkdocs-with-pdf, appended after its built-in
+// report-print.scss (see mkdocs_with_pdf/styles/__init__.py -- this file
+// is compiled and concatenated last, so these rules win the cascade).
+//
+// Mitigates two known mkdocs-with-pdf/WeasyPrint rendering issues on
+// Iron Compass reports specifically: wide evidence/confidence-ledger
+// tables and vetting-ledger code blocks getting split awkwardly across
+// a page boundary, which makes a Thesis Report's tables unreadable in
+// PDF even though they render fine in the browser.
+
+table {
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+// Long tables (e.g. the Vetting Ledger's source table) may legitimately
+// exceed one page. Force the header row to repeat instead of avoiding
+// breaks entirely, so a table that MUST split still reads correctly.
+table.md-typeset__table {
+  page-break-inside: auto;
+  break-inside: auto;
+
+  thead {
+    display: table-header-group;
+  }
+
+  tr {
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+}
+
+// Fenced code blocks (the Vetting Ledger's plain-text records in the
+// worked example report) should not split mid-record.
+pre, .highlight {
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+// Admonitions (used for flagged/rejected-source callouts) should stay
+// intact as a single visual unit.
+.admonition {
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+// Avoid a heading being stranded alone at the bottom of a page with its
+// content pushed to the next one.
+h1, h2, h3, h4 {
+  page-break-after: avoid;
+  break-after: avoid;
+}
