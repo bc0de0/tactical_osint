@@ -4,10 +4,12 @@ slug: russia-kyiv-strike-july-2026-assessment
 title: 'Russia''s July 2026 Kyiv Strike: Degradation Campaign or Coercive Escalation?'
 authors:
 - iron_compass
-categories: &id001
+categories:
+- Geopolitical and Conflict Analysis
+tags:
+- Russia
+- Ukraine
 - Military
-- Political
-tags: *id001
 ---
 
 
@@ -33,6 +35,8 @@ confidence, Russia's ground offensive gained territory in June 2026 at
 roughly 6% of its June 2025 pace (Section 5), consistent with a
 campaign under sustained attritional strain even as its strike
 campaign against Ukrainian infrastructure continues.
+
+<!-- more -->
 
 ------------------------------------------------------------------------
 
@@ -211,7 +215,7 @@ Section 4's ordinary citation rules].
 
 Per the Quantitative Methods document, Part I:
 
-```
+```text title="Confidence Score -- Buildings Struck"
 Evidence Strength: Strong (specific count, internally consistent,
                     corroborated) -> E = 3
 Reliability: A (ISW)                -> R = 3
@@ -234,7 +238,7 @@ corroboration; no ceilings triggered).
 
 ## 5.2 Confidence Score -- "Russian June 2026 territorial gains, single source"
 
-```
+```text title="Confidence Score -- Territorial Gains"
 Evidence Strength: Strong (specific figure, methodologically
                     consistent with the source's own established
                     tracking method) -> E = 3
@@ -267,7 +271,7 @@ Per the Quantitative Methods document, Part V, using ISW's (Tier 2,
 Reliability A) reporting [Vetting: Pass -- see Section 5.2 for the
 confidence treatment of this same dataset]:
 
-```
+```text title="Territorial Momentum Calculation"
 NetChange(June 2026) = 30.42 km² gained
 T = 1 month
 Rate(June 2026) = 30.42 / 30 days = 1.01 km²/day
@@ -308,7 +312,7 @@ figure, no single traceable original, used only for order-of-magnitude
 illustration per the Quantitative Methods document's own caveat
 against self-reported costs].
 
-```
+```text title="Cost Exchange Ratio (WCER) Calculation"
 Shahed-136-type strike drone: C_a ~ $30,000/unit (estimated)
 Mobile ground-based fire group interception (guns/EW, typical method
   used against Shahed-type drones): C_d,drone ~ $3,000-5,000/engagement
@@ -362,7 +366,7 @@ a Collection Gap (Section 9), not silently assumed.
 Per the Quantitative Methods document, Part IV, applied to the July
 1-2 strike:
 
-```
+```text title="Escalation Index Calculation"
 ScaleScore         = 72  (record ballistic-missile count for a single
                           Kyiv strike; large total munitions count
                           relative to the recent monthly baseline)
@@ -586,7 +590,7 @@ wave (would shift weight toward Branch 2).
 
 ## 10.2 Full Vetting Ledger
 
-```
+```text title="Vetting Ledger -- All 15 Candidate Sources"
 Candidate ID: C-01
 Source Name: Institute for the Study of War (ISW), Russian Offensive
              Campaign Assessment, July 2, 2026

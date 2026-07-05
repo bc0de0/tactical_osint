@@ -67,22 +67,20 @@ plugins:
       blog_dir: reports
       post_url_format: "{slug}"
       post_date_format: long
+      post_excerpt: required
       archive: true
       archive_date_format: yyyy
       categories: true
+      # Reports taxonomy is 3 pillars: Cyber Threat Intelligence, Adversary
+      # Campaigns, Geopolitical and Conflict Analysis. Only pillars with at
+      # least one published post are listed here -- mkdocs-material's blog
+      # sidebar renders a link for every entry in this list regardless of
+      # whether any post uses it, so an empty pillar means a dead 404 link
+      # on a client-facing page. Add "Cyber Threat Intelligence" and
+      # "Adversary Campaigns" here the same day the first post in each
+      # category ships, not before.
       categories_allowed:
-        - Cyber
-        - Military
-        - Maritime
-        - Airpower
-        - Space
-        - Energy
-        - Logistics
-        - Industrial
-        - Economic
-        - Political
-        - Information Operations
-        - Intelligence
+        - Geopolitical and Conflict Analysis
       pagination: true
       pagination_per_page: 10
   - tags:
